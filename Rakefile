@@ -26,7 +26,6 @@ task :generate, :version, :service do |_, args|
     wsdls = YahooAdApi::ApiConfig.get_wsdls(version)
     wsdls.each do |service_name, wsdl_url|
       next unless service.nil? or service_name.eql?(service)
-      wsdl_url = "https://ss.yahooapis.jp/services/V5.1/LocationService?wsdl"
       logger.info('Processing %s at [%s]...' % [service_name, wsdl_url])
       generator = Shampoohat::Build::SavonGenerator.new(
           wsdl_url, code_path, api_config.api_name, version, service_name)
