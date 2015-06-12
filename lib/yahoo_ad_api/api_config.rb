@@ -15,6 +15,7 @@ module YahooAdApi
     DEFAULT_VERSION = :V5_1
     DEFAULT_ENVIRONMENT = :PRODUCTION
     LATEST_VERSION = :V5_1
+    DEFAULT_NS = :ns1
 
     # Set other constants
     API_NAME = 'YahooAdApi'
@@ -103,6 +104,10 @@ module YahooAdApi
 
     def self.headers_config
       @@headers_config
+    end
+
+    def self.default_ns
+      DEFAULT_NS
     end
 
     # Get the download URL for Ad Hoc reports.

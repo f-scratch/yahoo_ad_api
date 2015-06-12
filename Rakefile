@@ -28,7 +28,7 @@ task :generate, :version, :service do |_, args|
       next unless service.nil? or service_name.eql?(service)
       logger.info('Processing %s at [%s]...' % [service_name, wsdl_url])
       generator = Shampoohat::Build::SavonGenerator.new(
-          wsdl_url, code_path, api_config.api_name, version, service_name)
+          wsdl_url, code_path, api_config.api_name, version, service_name, nil, nil, api_config.default_ns.to_s)
       generator.process_wsdl()
     end
   end

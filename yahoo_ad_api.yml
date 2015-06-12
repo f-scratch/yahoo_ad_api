@@ -3,7 +3,7 @@
 # Please fill in the required fields, and copy it over to your home directory.
 :authentication:
   # Authentication method, methods currently supported: OAUTH2, OAUTH2_JWT.
-  :method: :NOTHING
+  :method: :YAHOO
 
   # Auth parameters for OAUTH2 method.
   # Set the OAuth2 client id and secret. Register your application here to
@@ -31,6 +31,11 @@
   :developer_token: my_token
   :client_customer_id: my_customer_id
   :user_agent: my_user_agent
+
+  #
+  :license: my_license
+  :apiAccountId: my_account_id
+  :apiAccountPassword: my_account_password
 :service:
   # Only production environment is available now, see: http://goo.gl/Plu3o
   :environment: PRODUCTION
