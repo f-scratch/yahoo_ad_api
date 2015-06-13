@@ -18,7 +18,7 @@ if __FILE__ == $0
   API_VERSION = :V5_1
   begin
     get_location
-  rescue => e
-    puts e
+  rescue Shampoohat::Errors::ApiException => e
+    puts e.message
   end
 end
