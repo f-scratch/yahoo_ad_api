@@ -1,7 +1,4 @@
-require 'pry'
 require 'shampoohat/api'
-require 'shampoohat/savon_headers/oauth_header_handler'
-require 'shampoohat/savon_headers/nothing_header_handler'
 require 'shampoohat/savon_headers/yahoo_header_handler'
 require 'yahoo_ad_api/api_config'
 require 'yahoo_ad_api/credential_handler'
@@ -12,13 +9,14 @@ module YahooAdApi
 
   class Api < Shampoohat::Api
 
-    attr_reader :header_info
+    attr_reader :header_info, :location_url
 
     # Constructor for API.
     def initialize(provided_config = nil)
       super(provided_config)
       @credential_handler = YahooAdApi::CredentialHandler.new(@config)
       @header_info = nil
+      @location_url = nil
     end
 
     # Getter for the API service configurations
@@ -41,10 +39,6 @@ module YahooAdApi
     def soap_header_handler(auth_handler, version, header_ns, default_ns)
       auth_method = @config.read('authentication.method', :YAHOO)
       handler_class = case auth_method
-        when :OAUTH2, :OAUTH2_JWT
-          Shampoohat::SavonHeaders::OAuthHeaderHandler
-        when :NOTHING
-          Shampoohat::SavonHeaders::NothingHeaderHandler
         when :YAHOO
           Shampoohat::SavonHeaders::YahooHeaderHandler
         else
@@ -141,6 +135,10 @@ module YahooAdApi
 
     def header_info=(value)
       @header_info = value
+    end
+
+    def location_url=(value)
+      @location_url = value
     end
 
     private
