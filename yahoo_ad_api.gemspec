@@ -30,6 +30,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "pry-byebug"
 
-  spec.add_runtime_dependency "shampoohat", '~> 0.0.3'
+  spec.add_runtime_dependency "shampoohat", '~> 0.0.4'
 
 end
