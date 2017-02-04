@@ -1,5 +1,5 @@
 module YahooAdApi
   module ApiConfig
-    CLIENT_LIB_VERSION = '0.0.6'
+    CLIENT_LIB_VERSION = '0.0.7'
   end
 end
