@@ -1,11 +1,16 @@
 require 'spec_helper'
 
-describe YahooAdApi do
-  it 'has a version number' do
-    expect(YahooAdApi::VERSION).not_to be nil
+RSpec.describe YahooAdApi do
+  include_context 'config.helper.v6.3'
+  let(:yahoo_ad_api) { YahooAdApi::Api.new(api_config) }
+
+  describe '#initialize' do
+    it { expect { yahoo_ad_api.service(:LocationService, api_version) }.not_to raise_error }
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  describe '#api_config' do
+    let(:api_config) { {} }
+    subject { yahoo_ad_api.api_config }
+    it { is_expected.to eq YahooAdApi::ApiConfig }
   end
 end
