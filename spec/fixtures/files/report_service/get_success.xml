@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://ss.yahooapis.jp/V6">
+  <SOAP-ENV:Header>
+    <ns1:ResponseHeader>
+      <ns1:service>ReportService</ns1:service>
+      <ns1:remainingQuota>-1</ns1:remainingQuota>
+      <ns1:quotaUsedForThisRequest>-1</ns1:quotaUsedForThisRequest>
+      <ns1:timeTakenMillis>0.0749</ns1:timeTakenMillis>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:getResponse>
+      <ns1:rval>
+        <ns1:totalNumEntries>2</ns1:totalNumEntries>
+        <ns1:Page.Type>ReportPage</ns1:Page.Type>
+        <ns1:values>
+          <ns1:operationSucceeded>true</ns1:operationSucceeded>
+          <ns1:reportRecord>
+            <ns1:accountId>1000000000</ns1:accountId>
+            <ns1:reportId>295274163</ns1:reportId>
+            <ns1:reportJobId>442105884</ns1:reportJobId>
+            <ns1:reportName>ACCOUNT</ns1:reportName>
+            <ns1:reportJobStatus>COMPLETED</ns1:reportJobStatus>
+            <ns1:requestTime>2017/08/05 09:26:57</ns1:requestTime>
+            <ns1:completeTime>2017/08/05 09:27:20</ns1:completeTime>
+            <ns1:reportDownloadURL>https://sandbox.ss.yahooapis.jp/report/V6.3/download/fakeurl</ns1:reportDownloadURL>
+          </ns1:reportRecord>
+        </ns1:values>
+      </ns1:rval>
+    </ns1:getResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

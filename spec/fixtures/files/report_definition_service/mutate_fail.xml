@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://ss.yahooapis.jp/V6">
+  <SOAP-ENV:Header>
+    <ns1:ResponseHeader>
+      <ns1:service>ReportDefinitionService</ns1:service>
+      <ns1:remainingQuota>-1</ns1:remainingQuota>
+      <ns1:quotaUsedForThisRequest>-1</ns1:quotaUsedForThisRequest>
+      <ns1:timeTakenMillis>0.1657</ns1:timeTakenMillis>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns1:mutateResponse>
+      <ns1:rval>
+        <ns1:ListReturnValue.Type>ReportDefinitionReturnValue</ns1:ListReturnValue.Type>
+        <ns1:Operation.Type>ADD</ns1:Operation.Type>
+        <ns1:values>
+          <ns1:operationSucceeded>false</ns1:operationSucceeded>
+          <ns1:error>
+            <ns1:code>0009</ns1:code>
+            <ns1:message>invalid enum.</ns1:message>
+            <ns1:detail>
+              <ns1:requestKey>fields</ns1:requestKey>
+              <ns1:requestValue>DATE_KEY</ns1:requestValue>
+            </ns1:detail>
+            <ns1:detail>
+              <ns1:requestKey>fields</ns1:requestKey>
+              <ns1:requestValue>YAHOO_ACCOUNT_KEY</ns1:requestValue>
+            </ns1:detail>
+            <ns1:detail>
+              <ns1:requestKey>fields</ns1:requestKey>
+              <ns1:requestValue>YAHOO_ACCOUNT_NAME</ns1:requestValue>
+            </ns1:detail>
+          </ns1:error>
+        </ns1:values>
+      </ns1:rval>
+    </ns1:mutateResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
