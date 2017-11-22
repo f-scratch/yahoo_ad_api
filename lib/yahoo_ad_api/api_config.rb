@@ -12,9 +12,9 @@ module YahooAdApi
     end
 
     # Set defaults
-    DEFAULT_VERSION = :V6_3
+    DEFAULT_VERSION = :V6_4
     DEFAULT_ENVIRONMENT = :PRODUCTION
-    LATEST_VERSION = :V6_3
+    LATEST_VERSION = :V6_4
     DEFAULT_NS = :ns1
 
     # Set other constants
@@ -204,6 +204,40 @@ module YahooAdApi
         :RetargetingListService,
         :SharedCriterionService,
         :TargetingIdeaService,
+      ],
+      # @see https://github.com/yahoojp-marketing/sponsored-search-api-documents/tree/6.4/docs/ja/api_reference/services
+      :V6_4 => [
+        :AccountService,
+        :AccountSharedService,
+        :AccountTrackingUrlService,
+        :AdGroupAdService,
+        :AdGroupBidMultiplierService,
+        :AdGroupCriterionService,
+        :AdGroupFeedService,
+        :AdGroupRetargetingListService,
+        :AdGroupService,
+        :AuditLogService,
+        :BalanceService,
+        :BidLandscapeService,
+        :BiddingStrategyService,
+        :CampaignCriterionService,
+        :CampaignExportService,
+        :CampaignFeedService,
+        :CampaignRetargetingListService,
+        :CampaignService,
+        :CampaignSharedSetService,
+        :CampaignTargetService,
+        :ConversionTrackerService,
+        :DictionaryService,
+        :FeedFolderService,
+        :FeedItemService,
+        :KeywordEstimatorService,
+        :LocationService,
+        :ReportDefinitionService,
+        :ReportService,
+        :RetargetingListService,
+        :SharedCriterionService,
+        :TargetingIdeaService
       ]
     }
 
@@ -217,7 +251,8 @@ module YahooAdApi
         :V6_0 => '',
         :V6_1 => '',
         :V6_2 => '',
-        :V6_3 => ''
+        :V6_3 => '',
+        :V6_4 => ''
       },
       # WSDL location is changed irregularly
       :PRODUCTION => {
@@ -228,7 +263,8 @@ module YahooAdApi
         :V6_0 => '',
         :V6_1 => '',
         :V6_2 => '',
-        :V6_3 => ''
+        :V6_3 => '',
+        :V6_4 => ''
       }
     }
 
@@ -404,7 +440,38 @@ module YahooAdApi
       [:V6_3, :ReportService] => '',
       [:V6_3, :RetargetingListService] => '',
       [:V6_3, :SharedCriterionService] => '',
-      [:V6_3, :TargetingIdeaService] => ''
+      [:V6_3, :TargetingIdeaService] => '',
+      [:V6_4, :AccountService] => '',
+      [:V6_4, :AccountSharedService] => '',
+      [:V6_4, :AccountTrackingUrlService] => '',
+      [:V6_4, :AdGroupAdService] => '',
+      [:V6_4, :AdGroupBidMultiplierService] => '',
+      [:V6_4, :AdGroupCriterionService] => '',
+      [:V6_4, :AdGroupFeedService] => '',
+      [:V6_4, :AdGroupRetargetingListService] => '',
+      [:V6_4, :AdGroupService] => '',
+      [:V6_4, :AuditLogService] => '',
+      [:V6_4, :BalanceService] => '',
+      [:V6_4, :BidLandscapeService] => '',
+      [:V6_4, :BiddingStrategyService] => '',
+      [:V6_4, :CampaignCriterionService] => '',
+      [:V6_4, :CampaignExportService] => '',
+      [:V6_4, :CampaignFeedService] => '',
+      [:V6_4, :CampaignRetargetingListService] => '',
+      [:V6_4, :CampaignService] => '',
+      [:V6_4, :CampaignSharedSetService] => '',
+      [:V6_4, :CampaignTargetService] => '',
+      [:V6_4, :ConversionTrackerService] => '',
+      [:V6_4, :DictionaryService] => '',
+      [:V6_4, :FeedFolderService] => '',
+      [:V6_4, :FeedItemService] => '',
+      [:V6_4, :KeywordEstimatorService] => '',
+      [:V6_4, :LocationService] => '',
+      [:V6_4, :ReportDefinitionService] => '',
+      [:V6_4, :ReportService] => '',
+      [:V6_4, :RetargetingListService] => '',
+      [:V6_4, :SharedCriterionService] => '',
+      [:V6_4, :TargetingIdeaService] => ''
     }
 
     public
