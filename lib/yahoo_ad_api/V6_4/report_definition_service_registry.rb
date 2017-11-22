@@ -51,6 +51,10 @@ module YahooAdApi; module V6_4; module ReportDefinitionService
           [{:name=>:report_type,
             :type=>"ReportType",
             :min_occurs=>1,
+            :max_occurs=>1},
+           {:name=>:lang,
+            :type=>"ReportLang",
+            :min_occurs=>0,
             :max_occurs=>1}],
         :output=>
           {:name=>"get_report_fields_response",
@@ -265,7 +269,7 @@ module YahooAdApi; module V6_4; module ReportDefinitionService
           {:name=>:operand,
             :type=>"ReportDefinition",
             :min_occurs=>1,
-            :max_occurs=>:unbounded}],
+            :max_occurs=>1}],
         :base=>"Operation"},
       :Operation=>
         {:fields=>

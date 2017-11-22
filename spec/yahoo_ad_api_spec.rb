@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 RSpec.describe YahooAdApi do
-  include_context 'config.helper.v6.3'
+  include_context 'config.helper.v6.4'
   let(:yahoo_ad_api) { YahooAdApi::Api.new(api_config) }
 
   describe '#initialize' do
