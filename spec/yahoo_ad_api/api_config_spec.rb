@@ -2,7 +2,7 @@ require 'spec_helper'
 require 'yahoo_ad_api/api_config'
 
 RSpec.describe YahooAdApi::ApiConfig do
-  include_context 'config.helper.v6.3'
+  include_context 'config.helper.v6.4'
 
   describe '.do_require' do
     subject { described_class.do_require(api_version, :LocationService) }
