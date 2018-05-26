@@ -12,9 +12,9 @@ module YahooAdApi
     end
 
     # Set defaults
-    DEFAULT_VERSION = :V6_4
+    DEFAULT_VERSION = :V201805
     DEFAULT_ENVIRONMENT = :PRODUCTION
-    LATEST_VERSION = :V6_4
+    LATEST_VERSION = :V201805
     DEFAULT_NS = :ns1
 
     # Set other constants
@@ -238,6 +238,40 @@ module YahooAdApi
         :RetargetingListService,
         :SharedCriterionService,
         :TargetingIdeaService
+      ],
+      # @see https://github.com/yahoojp-marketing/sponsored-search-api-documents/tree/201805/docs/ja/api_reference/services
+      :V201805 => [
+        :AccountService,
+        :AccountSharedService,
+        :AccountTrackingUrlService,
+        :AdGroupAdService,
+        :AdGroupBidMultiplierService,
+        :AdGroupCriterionService,
+        :AdGroupFeedService,
+        :AdGroupRetargetingListService,
+        :AdGroupService,
+        :AuditLogService,
+        :BalanceService,
+        :BidLandscapeService,
+        :BiddingStrategyService,
+        :CampaignCriterionService,
+        :CampaignExportService,
+        :CampaignFeedService,
+        :CampaignRetargetingListService,
+        :CampaignService,
+        :CampaignSharedSetService,
+        :CampaignTargetService,
+        :ConversionTrackerService,
+        :DictionaryService,
+        :FeedFolderService,
+        :FeedItemService,
+        :KeywordEstimatorService,
+        :LocationService,
+        :ReportDefinitionService,
+        :ReportService,
+        :RetargetingListService,
+        :SharedCriterionService,
+        :TargetingIdeaService
       ]
     }
 
@@ -245,26 +279,28 @@ module YahooAdApi
     @@environment_config = {
       :SANDBOX => {
         :oauth_scope => 'https://sandbox.ss.yahooapis.jp/services/',
-        :header_ns => 'http://ss.yahooapis.jp/V6/',
+        :header_ns => 'http://ss.yahooapis.jp/V201805/',
         :V5_1 => '',
         :V5_2 => '',
         :V6_0 => '',
         :V6_1 => '',
         :V6_2 => '',
         :V6_3 => '',
-        :V6_4 => ''
+        :V6_4 => '',
+        :V201805 => '',
       },
       # WSDL location is changed irregularly
       :PRODUCTION => {
         :oauth_scope => 'https://ss.yahooapis.jp/services/',
-        :header_ns => 'http://ss.yahooapis.jp/V6/',
+        :header_ns => 'http://ss.yahooapis.jp/V201805/',
         :V5_1 => '',
         :V5_2 => '',
         :V6_0 => '',
         :V6_1 => '',
         :V6_2 => '',
         :V6_3 => '',
-        :V6_4 => ''
+        :V6_4 => '',
+        :V201805 => ''
       }
     }
 
@@ -471,7 +507,38 @@ module YahooAdApi
       [:V6_4, :ReportService] => '',
       [:V6_4, :RetargetingListService] => '',
       [:V6_4, :SharedCriterionService] => '',
-      [:V6_4, :TargetingIdeaService] => ''
+      [:V6_4, :TargetingIdeaService] => '',
+      [:V201805, :AccountService] => '',
+      [:V201805, :AccountSharedService] => '',
+      [:V201805, :AccountTrackingUrlService] => '',
+      [:V201805, :AdGroupAdService] => '',
+      [:V201805, :AdGroupBidMultiplierService] => '',
+      [:V201805, :AdGroupCriterionService] => '',
+      [:V201805, :AdGroupFeedService] => '',
+      [:V201805, :AdGroupRetargetingListService] => '',
+      [:V201805, :AdGroupService] => '',
+      [:V201805, :AuditLogService] => '',
+      [:V201805, :BalanceService] => '',
+      [:V201805, :BidLandscapeService] => '',
+      [:V201805, :BiddingStrategyService] => '',
+      [:V201805, :CampaignCriterionService] => '',
+      [:V201805, :CampaignExportService] => '',
+      [:V201805, :CampaignFeedService] => '',
+      [:V201805, :CampaignRetargetingListService] => '',
+      [:V201805, :CampaignService] => '',
+      [:V201805, :CampaignSharedSetService] => '',
+      [:V201805, :CampaignTargetService] => '',
+      [:V201805, :ConversionTrackerService] => '',
+      [:V201805, :DictionaryService] => '',
+      [:V201805, :FeedFolderService] => '',
+      [:V201805, :FeedItemService] => '',
+      [:V201805, :KeywordEstimatorService] => '',
+      [:V201805, :LocationService] => '',
+      [:V201805, :ReportDefinitionService] => '',
+      [:V201805, :ReportService] => '',
+      [:V201805, :RetargetingListService] => '',
+      [:V201805, :SharedCriterionService] => '',
+      [:V201805, :TargetingIdeaServic] => ''
     }
 
     public
