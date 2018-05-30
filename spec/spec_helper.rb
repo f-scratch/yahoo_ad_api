@@ -6,5 +6,5 @@ require 'yahoo_ad_api'
 require 'webmock/rspec'
 
 # NOTE : 実際に、net_connectしたい場合は、コメントアウト
-# - その際は、spec/support/shared/config_helper_v6.3.rb の接続情報を正しい値に編集すること
+# - その際は、spec/support/shared/config_helper_V201805.rb の接続情報を正しい値に編集すること
 # WebMock.allow_net_connect!
