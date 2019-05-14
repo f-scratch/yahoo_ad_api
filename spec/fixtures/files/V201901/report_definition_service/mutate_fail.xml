@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:ns1="http://ss.yahooapis.jp/V201901"
+  xmlns:ns2="http://ss.yahooapis.jp/V201901/ReportDefinition">
+  <SOAP-ENV:Header>
+    <ns1:ResponseHeader>
+      <service>ReportDefinitionService</service>
+      <timeTakenSeconds>0.0553</timeTakenSeconds>
+      <requestTime>1527295247</requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns2:mutateResponse>
+      <ns2:rval>
+        <ns1:ListReturnValue.Type>ReportDefinitionReturnValue</ns1:ListReturnValue.Type>
+        <ns1:Operation.Type>ADD</ns1:Operation.Type>
+        <ns2:values>
+          <ns1:operationSucceeded>false</ns1:operationSucceeded>
+          <ns1:error>
+            <ns1:code>0009</ns1:code>
+            <ns1:message>invalid enum.</ns1:message>
+            <ns1:detail>
+              <ns1:requestKey>fields</ns1:requestKey>
+              <ns1:requestValue>INVALID_COLUMN</ns1:requestValue>
+            </ns1:detail>
+          </ns1:error>
+        </ns2:values>
+      </ns2:rval>
+    </ns2:mutateResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

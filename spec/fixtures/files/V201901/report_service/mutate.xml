@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope
+  xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"
+  xmlns:ns1="http://ss.yahooapis.jp/V201901"
+  xmlns:ns2="http://ss.yahooapis.jp/V201901/Report">
+  <SOAP-ENV:Header>
+    <ns1:ResponseHeader>
+      <service>ReportService</service>
+      <timeTakenSeconds>0.0684</timeTakenSeconds>
+      <requestTime>1527295306</requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns2:mutateResponse>
+      <ns2:rval>
+        <ns1:ListReturnValue.Type>ReportReturnValue</ns1:ListReturnValue.Type>
+        <ns1:Operation.Type>ADD</ns1:Operation.Type>
+        <ns2:values>
+          <ns1:operationSucceeded>true</ns1:operationSucceeded>
+          <ns2:reportRecord>
+            <ns2:accountId>2000000000</ns2:accountId>
+            <ns2:reportId>295688187</ns2:reportId>
+            <ns2:reportJobId>442620865</ns2:reportJobId>
+            <ns2:reportName>ACCOUNT</ns2:reportName>
+            <ns2:reportJobStatus>WAIT</ns2:reportJobStatus>
+            <ns2:requestTime>2018/05/26 09:41:46</ns2:requestTime>
+          </ns2:reportRecord>
+        </ns2:values>
+      </ns2:rval>
+    </ns2:mutateResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
