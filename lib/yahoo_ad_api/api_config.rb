@@ -344,7 +344,7 @@ module YahooAdApi
         :V6_3 => '',
         :V6_4 => '',
         :V201805 => '',
-        :V201901 => 'https://ss.yahooapis.jp/services/'
+        :V201901 => ''
       }
     }
 
