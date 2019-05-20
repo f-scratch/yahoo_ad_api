@@ -30,7 +30,8 @@ RSpec.describe 'ReportDefinitionService' do
   end
 
   describe '#get_report_fields' do
-    subject { service.get_report_fields(report_type: report_category_account, lang: lang) }
+#    subject { service.get_report_fields(report_type: report_category_account, lang: lang) }
+    subject { service.get_report_fields(report_type: report_category_account) }
     it { expect(subject[:operation_succeeded]).to be_truthy }
     it { expect(subject[:fields].length).to eq 37 }
     it do
