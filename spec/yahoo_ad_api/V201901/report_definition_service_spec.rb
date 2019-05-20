@@ -30,7 +30,6 @@ RSpec.describe 'ReportDefinitionService' do
   end
 
   describe '#get_report_fields' do
-#    subject { service.get_report_fields(report_type: report_category_account, lang: lang) }
     subject { service.get_report_fields(report_type: report_category_account) }
     it { expect(subject[:operation_succeeded]).to be_truthy }
     it { expect(subject[:fields].length).to eq 37 }
@@ -43,7 +42,7 @@ RSpec.describe 'ReportDefinitionService' do
           :display_field_name_ja => "コスト",
           :field_name => "COST",
           :field_type => "LONG",
-          :impossible_combination_fields => ["OBJECT_OF_CONVERSION_TRACKING", "CONVERSION_NAME"],
+          :impossible_combination_fields => ["CONVERSION_NAME", "OBJECT_OF_CONVERSION_TRACKING"],
           :xml_attribute_name => "cost"
         }
       )
