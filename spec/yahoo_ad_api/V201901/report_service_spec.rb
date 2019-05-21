@@ -71,7 +71,7 @@ RSpec.describe 'ReportService' do
 
       it 'cannot get report_download_url' do
         target = subject[:values][0]
-        expect(target[:report_record][:report_job_status]).to eq 'COMPLETED'
+        expect(target[:report_record][:report_job_status]).to eq 'IN_PROGRESS'
       end
     end
   end
