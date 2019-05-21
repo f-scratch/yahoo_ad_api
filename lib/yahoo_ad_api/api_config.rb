@@ -12,9 +12,9 @@ module YahooAdApi
     end
 
     # Set defaults
-    DEFAULT_VERSION = :V201805
+    DEFAULT_VERSION = :V201901
     DEFAULT_ENVIRONMENT = :PRODUCTION
-    LATEST_VERSION = :V201805
+    LATEST_VERSION = :V201901
     DEFAULT_NS = :ns1
 
     # Set other constants
@@ -272,6 +272,48 @@ module YahooAdApi
         :RetargetingListService,
         :SharedCriterionService,
         :TargetingIdeaService
+      ],
+      # @see https://github.com/yahoojp-marketing/sponsored-search-api-documents/tree/201901/docs/ja/api_reference/services
+      :V201901 => [
+        :AccountService,
+        :AccountSharedService,
+        :AccountTrackingUrlService,
+        :AdGroupAdLabelService,
+        :AdGroupAdService,
+        :AdGroupBidMultiplierService,
+        :AdGroupCriterionLabelService,
+        :AdGroupCriterionService,
+        :AdGroupFeedService,
+        :AdGroupLabelService,
+        :AdGroupRetargetingListService,
+        :AdGroupService,
+        :AdGroupWebpageService,
+        :AuditLogService,
+        :BalanceService,
+        :BidLandscapeService,
+        :BiddingStrategyService,
+        :CampaignCriterionService,
+        :CampaignExportService,
+        :CampaignFeedService,
+        :CampaignLabelService,
+        :CampaignRetargetingListService,
+        :CampaignService,
+        :CampaignSharedSetService,
+        :CampaignTargetService,
+        :CampaignWebpageService,
+        :ConversionTrackerService,
+        :DictionaryService,
+        :FeedFolderService,
+        :FeedItemService,
+        :KeywordEstimatorService,
+        :LabelService,
+        :LocationService,
+        :PageFeedItemService,
+        :ReportDefinitionService,
+        :ReportService,
+        :RetargetingListService,
+        :SharedCriterionService,
+        :TargetingIdeaService
       ]
     }
 
@@ -279,7 +321,7 @@ module YahooAdApi
     @@environment_config = {
       :SANDBOX => {
         :oauth_scope => 'https://sandbox.ss.yahooapis.jp/services/',
-        :header_ns => 'http://ss.yahooapis.jp/V201805/',
+        :header_ns => 'http://ss.yahooapis.jp/V201901/',
         :V5_1 => '',
         :V5_2 => '',
         :V6_0 => '',
@@ -288,11 +330,12 @@ module YahooAdApi
         :V6_3 => '',
         :V6_4 => '',
         :V201805 => '',
+        :V201901 => ''
       },
       # WSDL location is changed irregularly
       :PRODUCTION => {
         :oauth_scope => 'https://ss.yahooapis.jp/services/',
-        :header_ns => 'http://ss.yahooapis.jp/V201805/',
+        :header_ns => 'http://ss.yahooapis.jp/V201901/',
         :V5_1 => '',
         :V5_2 => '',
         :V6_0 => '',
@@ -300,7 +343,8 @@ module YahooAdApi
         :V6_2 => '',
         :V6_3 => '',
         :V6_4 => '',
-        :V201805 => ''
+        :V201805 => '',
+        :V201901 => ''
       }
     }
 
@@ -538,7 +582,46 @@ module YahooAdApi
       [:V201805, :ReportService] => '',
       [:V201805, :RetargetingListService] => '',
       [:V201805, :SharedCriterionService] => '',
-      [:V201805, :TargetingIdeaServic] => ''
+      [:V201805, :TargetingIdeaServic] => '',
+      [:V201901, :AccountService] => '',
+      [:V201901, :AccountSharedService] => '',
+      [:V201901, :AccountTrackingUrlService] => '',
+      [:V201901, :AdGroupAdLabelService] => '',
+      [:V201901, :AdGroupAdService] => '',
+      [:V201901, :AdGroupBidMultiplierService] => '',
+      [:V201901, :AdGroupCriterionLabelService] => '',
+      [:V201901, :AdGroupCriterionService] => '',
+      [:V201901, :AdGroupFeedService] => '',
+      [:V201901, :AdGroupLabelService] => '',
+      [:V201901, :AdGroupRetargetingListService] => '',
+      [:V201901, :AdGroupService] => '',
+      [:V201901, :AdGroupWebpageService] => '',
+      [:V201901, :AuditLogService] => '',
+      [:V201901, :BalanceService] => '',
+      [:V201901, :BidLandscapeService] => '',
+      [:V201901, :BiddingStrategyService] => '',
+      [:V201901, :CampaignCriterionService] => '',
+      [:V201901, :CampaignExportService] => '',
+      [:V201901, :CampaignFeedService] => '',
+      [:V201901, :CampaignLabelService] => '',
+      [:V201901, :CampaignRetargetingListService] => '',
+      [:V201901, :CampaignService] => '',
+      [:V201901, :CampaignSharedSetService] => '',
+      [:V201901, :CampaignTargetService] => '',
+      [:V201901, :CampaignWebpageService] => '',
+      [:V201901, :ConversionTrackerService] => '',
+      [:V201901, :DictionaryService] => '',
+      [:V201901, :FeedFolderService] => '',
+      [:V201901, :FeedItemService] => '',
+      [:V201901, :KeywordEstimatorService] => '',
+      [:V201901, :LabelService] => '',
+      [:V201901, :LocationService] => '',
+      [:V201901, :PageFeedItemService] => '',
+      [:V201901, :ReportDefinitionService] => '',
+      [:V201901, :ReportService] => '',
+      [:V201901, :RetargetingListService] => '',
+      [:V201901, :SharedCriterionService] => '',
+      [:V201901, :TargetingIdeaService] => ''
     }
 
     public

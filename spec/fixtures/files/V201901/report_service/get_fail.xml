@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:ns1="http://ss.yahooapis.jp/V201901/Report" xmlns:ns2="http://ss.yahooapis.jp/V201901">
+    <ns1:ResponseHeader>
+      <ns2:service>Report</ns2:service>
+      <ns2:timeTakenSeconds>0.2090</ns2:timeTakenSeconds>
+      <ns2:requestTime>1558411964</ns2:requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns3:getResponse xmlns:ns2="http://ss.yahooapis.jp/V201901" xmlns:ns3="http://ss.yahooapis.jp/V201901/Report">
+      <ns3:rval>
+        <ns2:totalNumEntries>1</ns2:totalNumEntries>
+        <ns2:Page.Type>ReportPage</ns2:Page.Type>
+        <ns3:values>
+          <ns2:operationSucceeded>true</ns2:operationSucceeded>
+          <ns3:reportRecord>
+            <ns3:accountId>1000003584</ns3:accountId>
+            <ns3:reportId>295864612</ns3:reportId>
+            <ns3:reportJobId>442817175</ns3:reportJobId>
+            <ns3:reportName>ACCOUNT</ns3:reportName>
+            <ns3:reportJobStatus>IN_PROGRESS</ns3:reportJobStatus>
+            <ns3:requestTime>2019/05/21 13:12:44</ns3:requestTime>
+          </ns3:reportRecord>
+        </ns3:values>
+      </ns3:rval>
+    </ns3:getResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

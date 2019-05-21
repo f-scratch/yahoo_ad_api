@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:ns1="http://ss.yahooapis.jp/V201901/Report" xmlns:ns2="http://ss.yahooapis.jp/V201901">
+    <ns1:ResponseHeader>
+      <ns2:service>Report</ns2:service>
+      <ns2:timeTakenSeconds>0.2430</ns2:timeTakenSeconds>
+      <ns2:requestTime>1558412030</ns2:requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns3:getResponse xmlns:ns2="http://ss.yahooapis.jp/V201901" xmlns:ns3="http://ss.yahooapis.jp/V201901/Report">
+      <ns3:rval>
+        <ns2:totalNumEntries>1</ns2:totalNumEntries>
+        <ns2:Page.Type>ReportPage</ns2:Page.Type>
+        <ns3:values>
+          <ns2:operationSucceeded>true</ns2:operationSucceeded>
+          <ns3:reportRecord>
+            <ns3:accountId>1000003584</ns3:accountId>
+            <ns3:reportId>295864617</ns3:reportId>
+            <ns3:reportJobId>442817180</ns3:reportJobId>
+            <ns3:reportName>ACCOUNT</ns3:reportName>
+            <ns3:reportJobStatus>COMPLETED</ns3:reportJobStatus>
+            <ns3:requestTime>2019/05/21 13:13:50</ns3:requestTime>
+            <ns3:completeTime>2019/05/21 13:13:50</ns3:completeTime>
+            <ns3:reportDownloadURL>https://sandbox.ss.yahooapis.jp/report/V201901/download/2X5UR22IEhWdLreSnagN6fFbLI6y5Thr4XrEOz0RHrBiDiiXAlGCjDATDX2jp5kZngLH5R0hUti0hr6uGJ01SjLaVZoIZV7gim08wvm0e5V-xBwYzYB6zqnv6Wbxl_EO7x2_8maEmTECqSqPkN_7YQDJeZ34DpsrA00GbUONaH1SLCVRt48XU1yzvuIDdtuTEJuEgYpp38s7oVb2eimPAC2KDRodQ-4VZmc8k67QroxEe7EInB5q0jM8hSV24JEdzNXsVsbX7QtT340xSImli2zAnNrTkt3kRUr84pKBbHIbt7rO-3rmsBkP7ffuqQf7vEgbLq5AjtXJLrkIWE_QsefHtbSAgH1x2r3GskMmQm3wDp2uuToYVaG_jU9tZTJ9ctZPEJxMQ4M4_E-0xW_zXHYhnCzvJH7b82KfgGOVnyc=</ns3:reportDownloadURL>
+          </ns3:reportRecord>
+        </ns3:values>
+      </ns3:rval>
+    </ns3:getResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

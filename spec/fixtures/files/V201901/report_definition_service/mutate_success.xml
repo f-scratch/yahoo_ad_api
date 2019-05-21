@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:ns1="http://ss.yahooapis.jp/V201901/ReportDefinition" xmlns:ns2="http://ss.yahooapis.jp/V201901">
+    <ns1:ResponseHeader>
+      <ns2:service>ReportDefinition</ns2:service>
+      <ns2:timeTakenSeconds>0.2040</ns2:timeTakenSeconds>
+      <ns2:requestTime>1558409453</ns2:requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns3:mutateResponse xmlns:ns2="http://ss.yahooapis.jp/V201901" xmlns:ns3="http://ss.yahooapis.jp/V201901/ReportDefinition">
+      <ns3:rval>
+        <ns2:ListReturnValue.Type>ReportDefinitionReturnValue</ns2:ListReturnValue.Type>
+          <ns2:Operation.Type>ADD</ns2:Operation.Type>
+          <ns3:values>
+            <ns2:operationSucceeded>true</ns2:operationSucceeded>
+            <ns3:reportDefinition>
+            <ns3:accountId>1000003584</ns3:accountId>
+            <ns3:reportId>295864609</ns3:reportId>
+            <ns3:reportName>ACCOUNT</ns3:reportName>
+            <ns3:reportType>ACCOUNT</ns3:reportType>
+            <ns3:dateRangeType>CUSTOM_DATE</ns3:dateRangeType>
+            <ns3:dateRange>
+              <ns3:startDate>20190101</ns3:startDate>
+              <ns3:endDate>20190104</ns3:endDate>
+            </ns3:dateRange>
+            <ns3:fields>CLICKS</ns3:fields>
+            <ns3:fields>CLICK_RATE</ns3:fields>
+            <ns3:fields>DAY</ns3:fields>
+            <ns3:sortFields>
+              <ns3:type>ASC</ns3:type>
+              <ns3:field>DAY</ns3:field>
+            </ns3:sortFields>
+            <ns3:isTemplate>FALSE</ns3:isTemplate>
+            <ns3:intervalType>ONETIME</ns3:intervalType>
+            <ns3:format>CSV</ns3:format>
+            <ns3:encode>UTF-8</ns3:encode>
+            <ns3:language>JA</ns3:language>
+            <ns3:compress>NONE</ns3:compress>
+            <ns3:includeZeroImpressions>FALSE</ns3:includeZeroImpressions>
+            <ns3:includeDeleted>TRUE</ns3:includeDeleted>
+          </ns3:reportDefinition>
+        </ns3:values>
+      </ns3:rval>
+    </ns3:mutateResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

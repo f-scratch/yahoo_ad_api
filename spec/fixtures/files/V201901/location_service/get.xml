@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Header xmlns:ns1="http://ss.yahooapis.jp/V201901/Location" xmlns:ns2="http://ss.yahooapis.jp/V201901">
+    <ns1:ResponseHeader>
+      <ns2:service>Location</ns2:service>
+      <ns2:timeTakenSeconds>0.8060</ns2:timeTakenSeconds>
+      <ns2:requestTime>1558408857</ns2:requestTime>
+    </ns1:ResponseHeader>
+  </SOAP-ENV:Header>
+  <SOAP-ENV:Body>
+    <ns3:getResponse xmlns:ns2="http://ss.yahooapis.jp/V201901" xmlns:ns3="http://ss.yahooapis.jp/V201901/Location">
+      <ns3:rval>
+        <ns2:operationSucceeded>true</ns2:operationSucceeded>
+        <ns3:value>sandbox.ss.yahooapis.jp</ns3:value>
+      </ns3:rval>
+    </ns3:getResponse>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
